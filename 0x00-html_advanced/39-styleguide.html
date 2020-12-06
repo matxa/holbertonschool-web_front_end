@@ -118,26 +118,30 @@
                     <tr>
                         <caption>Star Wars Trilogy Data</caption>
                     </tr>
-                    <tr>
-                        <th scope="col">Title</th>
-                        <th scope="col">Director</th>
-                        <th scope="col">Release Date</th>
-                    </tr>
-                    <tr>
-                        <th scope="row">Star Wars: Episode IV - A New Hope</th>
-                        <td>George Lucas</td>
-                        <td>May 25th, 1977</td>
-                    </tr>
-                    <tr>
-                        <th scope="row">Star Wars: Episode V - The Empire Strikes Back</th>
-                        <td>Irvin Kershner</td>
-                        <td>May 21st, 1980</td>
-                    </tr>
-                    <tr>
-                        <th scope="row">Star Wars: Episode VI - Return of the Jedi</th>
-                        <td>Richard Marquand</td>
-                        <td>May 25th, 1983</td>
-                    </tr>
+                    <thead>
+                        <tr>
+                            <th scope="col">Title</th>
+                            <th scope="col">Director</th>
+                            <th scope="col">Release Date</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <th scope="row">Star Wars: Episode IV - A New Hope</th>
+                            <td>George Lucas</td>
+                            <td>May 25th, 1977</td>
+                        </tr>
+                        <tr>
+                            <th scope="row">Star Wars: Episode V - The Empire Strikes Back</th>
+                            <td>Irvin Kershner</td>
+                            <td>May 21st, 1980</td>
+                        </tr>
+                        <tr>
+                            <th scope="row">Star Wars: Episode VI - Return of the Jedi</th>
+                            <td>Richard Marquand</td>
+                            <td>May 25th, 1983</td>
+                        </tr>
+                    </tbody>
                 </table>
             </section>
             <br>
@@ -154,32 +158,32 @@
                     </details>
                 </div>
                 <div>
-                    <summary>Always Open</summary>
-                    Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas.
+                    <h3>Open</h3>
+                    <details>
+                        <summary>Always open</summary>
+                        Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas.
+                    </details>
                 </div>
             </section>
             <br>
-            <!-- Videos -->
+            <!-- Video -->
             <section>
                 <header>
                     <h2>Video</h2>
-                    <video controls loop>
-                        <source src="https://intranet-projects-files.s3.amazonaws.com/webstack/BigBuckBunny.mp4">
-                        Sorry, your browser doesn't support HTML5 video
-                    </video>
                 </header>
+                <video src="https://intranet-projects-files.s3.amazonaws.com/webstack/BigBuckBunny.mp4" poster="https://intranet-projects-files.s3.amazonaws.com/webstack/thumbnail.jpg" controls loop>
+                    Sorry, your browser doesn't support HTML5 video
+                </video>
             </section>
-
             <br>
             <!-- Audio -->
             <section>
                 <header>
                     <h2>Audio</h2>
-                    <audio controls>
-                        <source src="https://intranet-projects-files.s3.amazonaws.com/webstack/TroubleChapter8_64kb.mp3">
-                        Sorry, your browser doesn't support audio element
-                    </audio>
                 </header>
+                <audio src="https://intranet-projects-files.s3.amazonaws.com/webstack/TroubleChapter8_64kb.mp3" controls>
+                    Sorry, your browser doesn't support audio element
+                </audio>
             </section>
         </main>
         <footer></footer>
