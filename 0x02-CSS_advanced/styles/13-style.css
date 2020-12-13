@@ -50,19 +50,16 @@ a {
     text-decoration: none;
 }
 
-a:link {
-    text-decoration: none;
-}
 
-a:visited {
+a:link a:visited {
     font-style: italic;
 }
 
-a:hover {
+a:link a:hover {
     text-decoration: underline;
 }
 
-a:active {
+a:link a:active {
     background: var(--color-dark-grey);
 }
 
