@@ -51,15 +51,15 @@ a {
 }
 
 
-a:link a:visited {
+a:link > a:visited {
     font-style: italic;
 }
 
-a:link a:hover {
+a:link > a:hover {
     text-decoration: underline;
 }
 
-a:link a:active {
+a:link > a:active {
     background: var(--color-dark-grey);
 }
 
