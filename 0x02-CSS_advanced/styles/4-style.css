@@ -4,10 +4,6 @@ html {
     scroll-behavior: smooth;
 }
 
-h1, h2, h3, h4, h5, h6 {
-    font-family: 'font-family-title';
-}
-
 body, a {
     color: var(--text-color);
     font-family: 'font-family-base';
@@ -21,6 +17,10 @@ body, a {
     color: var(--color-primary);
 }
 
+h1, h2, h3, h4, h5, h6 {
+    font-family: 'font-family-title';
+}
+
 :root {
     --color-primary: #d73953;
     --color-black: #090909;
@@ -32,9 +32,9 @@ body, a {
 
 @font-face {
     font-family: 'font-family-base';
-    src: local('Helvetica Neue'), local('Helvetica'), local('Arial'), local('sans-serif');
+    src: url('Helvetica Neue'), url('Helvetica'), url('Arial'), url('sans-serif');
 }
 @font-face {
     font-family: 'font-family-title';
-    src: local('Helvetica Neue'), local('Helvetica'), local('Arial'), local('sans-serif');
+    src: url('Helvetica Neue'), url('Helvetica'), url('Arial'), url('sans-serif');
 }
