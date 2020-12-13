@@ -1,0 +1,40 @@
+/* advanced css */
+
+html {
+    scroll-behavior: smooth;
+}
+
+body, a {
+    color: var(--text-color);
+    font-family: 'font-family-base';
+}
+
+.visually-hidden {
+    display: none;
+}
+
+.card-category, section-tagline {
+    color: var(--color-primary);
+}
+
+h1, h2, h3, h4, h5, h6 {
+    font-family: 'font-family-title';
+}
+
+:root {
+    --color-primary: #d73953;
+    --color-black: #090909;
+    --color-white: #ffffff;
+    --color-light-grey: #f3f3f3;
+    --color-dark-grey: #353535;
+    --text-color: var(--color-black);
+
+    @font-face {
+        font-family: 'font-family-base';
+        src: local('Helvetica Neue'), local('Helvetica'), local('Arial'), local('sans-serif');
+    }
+    @font-face {
+        font-family: 'font-family-title';
+        src: local('Helvetica Neue'), local('Helvetica'), local('Arial'), local('sans-serif');
+    }
+}
