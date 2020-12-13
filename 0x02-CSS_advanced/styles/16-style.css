@@ -101,5 +101,7 @@ a:active {
 
 .container {
     width: 960px;
-    margin: auto;
+    display: flex;
+    justify-content: space-evenly;
+    border: 1px solid red;
 }
