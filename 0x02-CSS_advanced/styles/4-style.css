@@ -1,5 +1,16 @@
 /* advanced css */
 
+:root {
+    --color-primary: #d73953;
+    --color-black: #090909;
+    --color-white: #ffffff;
+    --color-light-grey: #f3f3f3;
+    --color-dark-grey: #353535;
+    --text-color: var(--color-black);
+    --font-family-base: "Helvetica Neue", "Helvetica", "Arial", sans-serif;
+    --font-family-title: --font-family-base;
+}
+
 html {
     scroll-behavior: smooth;
 }
@@ -8,12 +19,12 @@ h1, h2, h3, h4, h5, h6 {
     font-family: var(--font-family-title);
 }
 
-body, a {
-    color: var(--text-color);
-}
-
 body {
     font-family: var(--font-family-base);
+}
+
+body, a {
+    color: var(--text-color);
 }
 
 .visually-hidden {
@@ -22,15 +33,4 @@ body {
 
 .card-category, .section-tagline {
     color: var(--color-primary);
-}
-
-:root {
-    --color-primary: #d73953;
-    --color-black: #090909;
-    --color-white: #ffffff;
-    --color-light-grey: #f3f3f3;
-    --color-dark-grey: #353535;
-    --text-color: var(--color-black);
-    --font-family-base: 'Helvetica Neue', 'Helvetica', 'Arial', sans-serif;
-    --font-family-title: --font-family-base;
 }
