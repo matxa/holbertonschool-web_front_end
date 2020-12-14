@@ -58,7 +58,7 @@ a:hover {
 }
 
 a:active {
-    background: var(--color-dark-grey);
+    background-color: var(--color-dark-grey);
 }
 
 .visually-hidden {
