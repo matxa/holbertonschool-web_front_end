@@ -46,9 +46,6 @@ body, a {
     color: var(--text-color);
 }
 
-a {
-    text-decoration: none;
-}
 
 a:link {
     text-decoration: none;
