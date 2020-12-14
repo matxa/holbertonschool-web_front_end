@@ -42,7 +42,6 @@
     --nav-item-link-hover: var(--color-primary);
     /* Task 19 */
     --section-tagline-margin: 0;
-    /* Task 22 */
 }
 
 *, *:before, *:after {
@@ -209,7 +208,7 @@ ul.row {
 }
 
 /* Task 22 */
-[data-section-theme=“dark”] {
+[data-section-theme="dark"] {
     --text-color: var(--color-white);
     --section-title-color: var(--color-white);
     background: var(--color-black);
