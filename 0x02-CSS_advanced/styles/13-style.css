@@ -49,6 +49,7 @@ body, a {
 
 a:link {
     text-decoration: none;
+    color: var(--text-color)
 }
 
 a:visited {
@@ -60,7 +61,7 @@ a:hover {
 }
 
 a:active {
-    color: var(--color-dark-grey);
+    background: var(--color-dark-grey);
 }
 
 .visually-hidden {
