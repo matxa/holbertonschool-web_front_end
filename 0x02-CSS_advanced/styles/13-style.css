@@ -60,7 +60,7 @@ a:hover {
 }
 
 a:active {
-    background-color: var(--color-dark-grey);
+    color: var(--color-dark-grey);
 }
 
 .visually-hidden {
