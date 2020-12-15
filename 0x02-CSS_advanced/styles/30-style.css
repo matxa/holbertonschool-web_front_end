@@ -357,7 +357,6 @@ ul.row {
     vertical-align: bottom;
 }
 
-
 .card-work .card-inner {
     position: absolute;
     top: -0.1rem;
@@ -366,11 +365,12 @@ ul.row {
     z-index: 1;
 }
 
-/*
+
 .card-work:hover .card-inner {
     background-color: rgba(0, 0, 0, 0.7);
 }
 
+/*
 .card-work .card-title {
     text-align: center;
     margin: 0;
