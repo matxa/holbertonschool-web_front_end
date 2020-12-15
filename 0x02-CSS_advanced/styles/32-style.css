@@ -420,3 +420,7 @@ ul.row {
 .card-work:hover .card-image {
     transform: scale(1.2);
 }
+
+.card-work:hover .card-outer {
+    transform: scale(0.95);
+}
