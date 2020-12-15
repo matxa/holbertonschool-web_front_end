@@ -426,5 +426,5 @@ ul.row {
 }
 
 .nav .nav-link::before {
-    transition: var(–transition-duration) var(transition-cubic-bezier);
+    transition: var(–transition-duration);
 }
