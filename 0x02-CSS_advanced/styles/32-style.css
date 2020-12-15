@@ -431,3 +431,7 @@ ul.row {
 .nav .nav-link::before {
     transition: var(--transition-duration) var(--transition-cubic-bezier);
 }
+
+.card-work:hover .card-image {
+    transition: var(--transition-duration) var(--transition-cubic-bezier);
+}
