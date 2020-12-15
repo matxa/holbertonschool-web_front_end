@@ -201,7 +201,7 @@ ul.row {
 }
 
 /* Task 20 */
-.row {
+.row::after {
     content: none;
     display: table;
     float: none;
