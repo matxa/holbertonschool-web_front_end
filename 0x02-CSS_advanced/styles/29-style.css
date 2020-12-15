@@ -338,7 +338,7 @@ nav .nav-link::before {
     height: .2rem;
 }
 
-nav .nav-link::before:hover {
+nav .nav-link::before .nav-link::before:hover {
     background-color: var(--color-primary);
     width: 100%;
 }
