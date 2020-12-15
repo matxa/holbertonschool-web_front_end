@@ -345,12 +345,12 @@ ul.row {
 
 /* Task 30 */
 
-.card-work .card-outer {
+.card-work > .card-outer {
     position: relative;
     overflow: hidden;
 }
 
-.card-work .card-image {
+/* .card-work .card-image {
     height: 30rem;
     width: 100%;
     object-fit: cover;
@@ -394,4 +394,4 @@ ul.row {
 
 .card-work:hover .card-title {
     opacity: 1;
-}
+} */
