@@ -350,13 +350,14 @@ ul.row {
     overflow: hidden;
 }
 
-/* .card-work .card-image {
+.card-work .card-image {
     height: 30rem;
     width: 100%;
     object-fit: cover;
     vertical-align: bottom;
 }
 
+/*
 .card-work .card-inner {
     position: absolute;
     top: -0.1rem;
