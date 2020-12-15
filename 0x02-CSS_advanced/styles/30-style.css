@@ -377,13 +377,12 @@ ul.row {
     position: relative;
 }
 
-/*
 .card-work .card-title:link {
     display: block;
     text-decoration: none;
     padding-top: 45%;
 }
-
+/*
 .card-work:link > .card-title::after {
     position: absolute;
     top: 0;
