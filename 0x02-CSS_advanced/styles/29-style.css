@@ -328,7 +328,7 @@ ul.row {
 }
 
 /* Task 29 */
-nav .nav-link::before {
+.nav .nav-link::before {
     content: "";
     position: absolute;
     top: 0;
@@ -338,7 +338,7 @@ nav .nav-link::before {
     height: 0.2rem;
 }
 
-nav .nav-link:hover::before {
+.nav .nav-link:hover::before {
     background-color: var(--color-primary);
     width: 100%;
 }
