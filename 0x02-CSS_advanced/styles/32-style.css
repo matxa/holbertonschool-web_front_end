@@ -439,3 +439,10 @@ ul.row {
 .card-work .card-inner {
     transition: var(--transition-duration) var(--transition-cubic-bezier);
 }
+
+/* Task 20 */
+.row::after {
+    content: "";
+    display: table;
+    clear: both;
+}
