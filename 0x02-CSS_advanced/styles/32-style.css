@@ -426,5 +426,6 @@ ul.row {
 }
 
 .nav .nav-link::before {
-    transition: var(–transition-duration);
+    transition: var(–-transition-duration);
 }
+
