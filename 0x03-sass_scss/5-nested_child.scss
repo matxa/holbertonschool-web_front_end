@@ -1,7 +1,7 @@
 /* nested child */
 body {
     color: #3D3D3D;
-    &:first-child .red {
+    &:first-child > .red {
         color: #FF0000;
     }
 }
