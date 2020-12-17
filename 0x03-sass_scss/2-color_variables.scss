@@ -4,14 +4,14 @@ $text-color: #3D3D3D;
 $background-color: #6D6D6D;
 
 body {
-    color: #3D3D3D;
-    background-color: #6D6D6D;
+    color: $text-color;
+    background-color: $background-color;
 }
   
 p {
-    color: #3D3D3D;
+    color: $text-color;
 }
   
 h2 {
-    background-color: #6D6D6D;
+    background-color: $background-color;
 }
