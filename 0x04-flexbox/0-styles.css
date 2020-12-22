@@ -187,12 +187,6 @@
     list-style: none;
   }
   
-  .row {
-    content: '';
-    display: table;
-    clear: both;
-  }
-  
   [class*='col-'] {
     padding: 0.5rem;
   }
