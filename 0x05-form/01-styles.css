@@ -658,3 +658,12 @@
 .post-comments .section-title {
   font-variant: small-caps;
 }
+
+/* Basic form
+    ============================= */
+form {
+  display: flex;
+  flex-direction: column;
+  padding: 1rem 0;
+  margin: 0;
+}
