@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+    <head>
+
+        <meta charset="utf-8" />
+        <title>Task 3</title>
+        <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha256-4+XzXVhsDmqanXGHaHvgh1gMQKX40OUvDEBTu8JcmNs=" crossorigin="anonymous"></script>
+    </head>
+
+    <body>
+
+        <script type="application/javascript">
+            window.onload = function() {
+                function createFamilyTree() {
+
+                    // Table Head
+                    $("body").append("<table></table>")
+                    $("table").append("<thead></thead>")
+                    $("thead").append("<tr></tr>")
+                    $("tr").append("<th></th>")
+                    $("th").text("Firstname");
+                    $("tr").append("<th></th>")
+                    $("th").text("Lastname");
+                    $("table").append("<tbody></tbody>")
+                    // Tabel Body
+                    // 1st
+                    $("tbody").append("<tr></tr>")
+                    $("tbody tr").append("<td></td>")
+                    $("tbody tr td").text("Guillaume")
+                    $("tbody tr").append("<td></td>")
+                    $("tbody tr td:nth-child(2)").text("Salva")
+                    // 2nd
+                    $("tbody").append("<tr></tr>")
+                    $("tbody tr:nth-child(2)").append("<td></td>")
+                    $("tbody tr:nth-child(2) td").text("Paulette")
+                    $("tbody tr:nth-child(2)").append("<td></td>")
+                    $("tbody tr:nth-child(2) td:nth-child(2)").text("Salva")
+                    // 3rd
+                    $("tbody").append("<tr></tr>")
+                    $("tbody tr:nth-child(3)").append("<td></td>")
+                    $("tbody tr:nth-child(3) td").text("Antoine")
+                    $("tbody tr:nth-child(3)").append("<td></td>")
+                    $("tbody tr:nth-child(3) td:nth-child(2)").text("Salva")
+                }
+                createFamilyTree();
+            }
+        </script>
+    </body>
+
+</html>
