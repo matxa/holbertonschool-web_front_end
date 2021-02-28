@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Task 3</title>
+</head>
+<body>
+    <!-- Create Cookies -->
+    <div id="formContainer">
+        <h2>Login to the website</h2>
+        <!-- <form onsubmit="event.defaultPrevented();"> -->
+            <input type="text" id="firstname" value="Firstname">
+            <input type="text" id="email" value="Email">
+            <button onclick="setCookies(); showWelcomeMessageOrForm();">Log me in</button>
+        <!-- </form> -->
+    </div>
+    <!-- SHOW Dashboard on login Hide on Logout -->
+    <div class="dashboard">
+        <p style="display: none;" id="welcome">Welcome <span id="cookieName"></span><span id="logout" onclick="deleteCookiesAndShowForm();" style="font-weight: normal; font-style: italic; margin-left: 10px; cursor: pointer; background: yellow;">( Logout )</span></p>
+    </div>
+
+    <script type="text/javascript">
+        function setCookies() {
+            let firstname = document.getElementById("firstname").value;
+            let email = document.getElementById("email").value;
+            // Set expiration date
+            let date = new Date(Date.now() + (10*24*60*60*1000));
+            date = date.toUTCString();
+
+            document.cookie = `firstname=${firstname}; expires=${date}`;
+            document.cookie = `email=${email}; expires=${date}`
+        }
+
+        function showCookies() {
+            const paragraph = `Email: ${getCookie("email")} - Firstname: ${getCookie("firstname")}`
+            let p = document.createElement("p").innerHTML = paragraph
+            document.body.append(p);
+        }
+
+        function getCookie(name) {
+            name = name + "=";
+            let decodedCookie = decodeURIComponent(document.cookie);
+            let ca = decodedCookie.split(';');
+            for(let i = 0; i < ca.length; i++) {
+                let c = ca[i];
+                while (c.charAt(0) == ' ') {
+                c = c.substring(1);
+                }
+                if (c.indexOf(name) == 0) {
+                return c.substring(name.length, c.length);
+                }
+            }
+            return "";
+        }
+
+        // SHOW FORM
+        function showForm() {
+            document.getElementById("formContainer").style.display = "block";
+        }
+
+        // HIDE FORM
+        function hideForm() {
+            document.getElementById("formContainer").style.display = "none";
+        }
+
+        // LOGOUT USER
+        function deleteCookiesAndShowForm() {
+            // Set expiration date to delete cookie
+            let date = new Date(Date.now() - (10*24*60*60*1000));
+            date = date.toUTCString();
+
+            document.cookie = `firstname=""; expires=${date}`;
+            document.cookie = `email=""; expires=${date}`
+            document.getElementById("welcome").style.display = "none";
+            showForm();
+        }
+
+        // LOGIN USER
+        function showWelcomeMessageOrForm() {
+            if (getCookie("firstname") == " "){
+                showForm()
+            }
+            else{
+                hideForm()
+            }
+            document.getElementById("cookieName").innerHTML = getCookie("firstname");
+            document.getElementById("welcome").style.display = "block";
+        }
+    </script>
+</body>
+</html>
