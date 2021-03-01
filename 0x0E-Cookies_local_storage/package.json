@@ -1,0 +1,24 @@
+{
+  "name": "0x0e-cookies_local_storage",
+  "version": "1.0.0",
+  "description": "Holberton Project",
+  "main": "index.js",
+  "dependencies": {
+    "webpack": "^5.24.2",
+    "webpack-cli": "^4.5.0",
+    "webpack-dev-server": "^3.11.2"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "node_modules/.bin/webpack serve"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/matxa/holbertonschool-web_front_end/tree/main/0x0E-Cookies_local_storage"
+  },
+  "keywords": [
+    "javascript"
+  ],
+  "author": "Marcelo R-M",
+  "license": "ISC"
+}
